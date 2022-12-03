@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+}
+
+h6,
+ul,
+li,
+a {
+  font-size: 12px;
+  color: white;
+  display: flex;
+  flex-flow: row;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline orange;
+  color: orange;
+}
+
+h6 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#main-article,
+#about-site,
+.card1,
+.card2,
+.card3,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.char1,
+.char2 {
+  color: orange;
+}
+
+h2,
+h3 {
+  margin-top: 0px;
+  text-align: center;
+}
+
+#main-article {
+  background-image: url(/assets/camp.jpg);
+  height: auto;
+  color: white;
+  background-position: bottom;
+  background-size: cover;
+  padding: 70px;
+}
+
+.joinUs {
+  background-color: rgb(250, 223, 170);
+  padding: 10px 30px;
+  margin-top: 50px;
+}
+
+.joinUs:hover {
+  background-color: rgb(249, 196, 116);
+}
+
+.joinUs:active {
+  background-color: orange;
+}
+
+#about-site {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  height: auto;
+  padding: 50px;
+}
+
+.readMore {
+  background-color: orange;
+  color: black;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.readMore:hover {
+  background-color: rgb(249, 196, 116);
+}
+
+.readMore:active {
+  background-color: rgb(250, 223, 170);
+}
+
+.card1,
+.card2,
+.card3 {
+  height: 250px;
+}
+
+.card1,
+.card3 {
+  background-color: rgb(248, 242, 231);
+}
+
+.card2 {
+  background-color: orange;
+}
+
+.fa-solid {
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.option {
+  color: black;
+  margin-top: 10px;
+}
+
+.card-description {
+  color: black;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(50, 50, 50);
+  height: 70px;
+  color: white;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 420px) {
+  header {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h6 {
+    margin: 10px 0px;
+    font-size: 1em;
+  }
+
+  nav,
+  ul,
+  li,
+  a {
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 95%;
+  }
+
+  li {
+    padding: 5px;
+    font-size: 5px;
+  }
+
+  li {
+    border-top: 0.1px rgb(95, 95, 95) solid;
+  }
+
+  a:hover {
+    background-color: rgb(95, 95, 95) solid;
+  }
+
+  a:active {
+    background-color: rgb(95, 95, 95) solid;
+  }
+}
